@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+  color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  padding-top: 40px;
+  min-height: fit-content;
+}
+
+.subtitle {
+  opacity: 50%;
+}
+
+.section-title {
+  padding: 5%;
+}
+
+.nav-link:hover {
+  color: #5a189a;
+}
+
+.nav-link {
+  color: white;
+  font-size: 20px;
+  border-bottom-color: #5a189a;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.btn-dark,
+.btn-dark:focus {
+  background-color: #5a189a;
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+
+::ng-deep.mat-dialog-container {
+  background-color: white;
+  color: black;
+  min-width: fit-content;
+}
+
+.btn-dark:hover {
+  color: #1a1a40;
+  background-color: #7a0bc0;
+}
+
+.btn {
+  border-radius: 25px;
+  border: 2px solid white;
+}
+
+.btn-pink {
+  border-color: #9d4edd;
+  color: #9d4edd;
+  margin: 15px;
+}
+
+.btn-white {
+  border-color: white;
+  color: white;
+  margin: 15px;
+}
+
+.btn-white:hover {
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-control {
+  margin-top: 5px;
+}
+
+.flash-message {
+  width: 33%;
+  margin-top: 15%;
+  margin-left: 33%;
+  margin-right: 33%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.btn-gray {
+  border-color: gray;
+  color: gray;
+}
+
+.btn-pink:hover {
+  background-color: #9d4edd;
+}
+
+.btn-gray:hover {
+  background-color: gray;
+  color: white;
+}
+
+.mat-card {
+  border: 1.5px solid #e0aaff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #240046;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5a189a;
+  border-radius: 35px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0aaff;
+}

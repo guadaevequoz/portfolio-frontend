@@ -1,0 +1,21 @@
+<div *ngIf="item" class="item">
+  <mat-card class="example-card">
+    <div class="info-ed">
+      <mat-card-subtitle>
+        <p>{{ item.tipo }} - {{ formatter.getStatus(item.terminado) }}</p>
+      </mat-card-subtitle>
+      <mat-card-title>{{ item.nombre }}</mat-card-title>
+      <p class="subtitle">
+        {{ item.tipo }} ({{ formatter.getFechaInicial(item.fechaInicio) }} - {{
+        formatter.getFechaFinal(item.fechaFin) }})
+      </p>
+      <p *ngIf="item.promedio">Promedio: {{ item.promedio }}</p>
+      <p *ngIf="item.descripcion">{{ item.descripcion }}</p>
+      <p>{{ item.institucion }}</p>
+      <div class="display-logo" *ngIf="item.logo">
+        <img class="logo sticky-bottom" src="{{ item.logo }}" />
+      </div>
+    </div>
+    <mat-divider inset></mat-divider>
+  </mat-card>
+</div>

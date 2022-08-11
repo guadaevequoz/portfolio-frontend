@@ -1,0 +1,24 @@
+<section id="contacto">
+  <div class="container-fluid">
+    <div class="section-title text-center">
+      <h2>Redes y contacto</h2>
+      <button class="btn btn-white" *ngIf="auth.Authenticated" (click)="add()">
+        + Agregar
+      </button>
+    </div>
+    <div class="row align-items-center justify-content-center row-items">
+      <div class="col-md-2" *ngFor="let item of contactoItems">
+        <div class="text-center" *ngIf="auth.Authenticated">
+          <button class="btn btn-white" (click)="edit(item)">Editar</button>
+          <button class="btn btn-danger" (click)="delete(item)">
+            Eliminar
+          </button>
+        </div>
+        <contacto-item [data]="item"></contacto-item>
+      </div>
+    </div>
+    <div class="text-center subtitle">
+      <p>Guadalupe Evequoz | 2022</p>
+    </div>
+  </div>
+</section>

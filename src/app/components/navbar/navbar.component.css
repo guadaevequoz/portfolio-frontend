@@ -1,0 +1,28 @@
+.arg-programa {
+  background-color: #10002b;
+  color: grey;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.ap-logo {
+  width: 8%;
+}
+
+.navbar {
+  transition: none;
+}
+
+.active {
+  color: #5a189a;
+  border-bottom: 1px solid;
+}
+
+.navbar-collapse {
+  align-items: center;
+}
+
+.header-nav {
+  text-align: center;
+}

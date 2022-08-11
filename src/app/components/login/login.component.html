@@ -1,0 +1,14 @@
+<a
+  class="btn btn-dark my-2 my-sm-0"
+  mat-raised-button
+  (click)="openDialog()"
+  *ngIf="!auth.Authenticated"
+  >Iniciar sesión</a
+>
+<a
+  class="btn btn-dark my-2 my-sm-0"
+  mat-raised-button
+  (click)="logout()"
+  *ngIf="auth.Authenticated"
+  >Cerrar sesión</a
+>

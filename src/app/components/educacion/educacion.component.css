@@ -1,0 +1,53 @@
+.mat-card {
+  color: black;
+  min-width: auto;
+  max-width: 410px;
+  min-height: 250px;
+  margin: 0px;
+}
+
+.info-ed {
+  height: 20rem;
+  overflow: auto;
+}
+
+.mat-dialog-container {
+  text-align: start;
+  min-width: fit-content;
+}
+
+.logo {
+  width: 30%;
+}
+
+.col-card {
+  margin: 2px;
+  min-width: fit-content;
+  max-width: 35%;
+}
+
+.display-logo {
+  text-align: center;
+}
+
+.mat-card-title {
+  border-bottom: 2px solid #7b2cbf;
+}
+
+#educacion {
+  background: #5a189a;
+  min-height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7b2cbf;
+  border-radius: 35px;
+}

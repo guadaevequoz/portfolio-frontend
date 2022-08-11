@@ -1,0 +1,20 @@
+<div *ngIf="data" class="item">
+    <mat-card class="card">
+        <div class="row">
+          <div class="col">
+            <mat-card-title class="title">{{ data.nombre }}</mat-card-title>
+          </div>
+        </div>
+        <mat-card-content>
+          <div class="row">
+            <div class="col">
+              <p class="info">{{ data.descripcion }}</p>
+              <div class="actions text-center">
+                <a href={{data.enlace}} target="_blank" class="btn btn-gray">Ver en GitHub</a>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-divider inset></mat-divider>
+      </mat-card>
+</div>

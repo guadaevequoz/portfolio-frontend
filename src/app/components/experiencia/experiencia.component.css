@@ -1,0 +1,43 @@
+#experiencia {
+  background: #7b2cbf;
+  min-height: 100vh;
+}
+.card {
+  color: black;
+  min-width: auto;
+  max-width: 500px;
+  margin: 0px;
+}
+
+.mat-card {
+  height: 20rem;
+  overflow: auto;
+}
+
+.col-card {
+  margin: 2px;
+  max-width: 35%;
+}
+
+::ng-deep.mat-dialog-container {
+  text-align: start;
+  min-width: min-content;
+}
+
+.mat-card-title {
+  border-bottom: 2px solid #9d4edd;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9d4edd;
+  border-radius: 35px;
+}

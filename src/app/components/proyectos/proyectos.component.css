@@ -1,0 +1,32 @@
+.title {
+  border-bottom: 2px solid #5a189a;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.info {
+  min-height: 5vh;
+  height: 8vh;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7b2cbf;
+  border-radius: 35px;
+}
+
+#proyectos {
+  background: #c77dff;
+  min-height: 100vh;
+}

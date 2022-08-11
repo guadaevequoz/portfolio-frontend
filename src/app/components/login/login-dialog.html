@@ -1,0 +1,44 @@
+<h1 mat-dialog-title>Iniciar sesión</h1>
+<hr />
+<div id="dialog">
+  <div mat-dialog-content>
+    <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+      <div class="text-center img">
+        <img src="assets/profile.jpg" alt="profile" />
+      </div>
+      <div class="form-group">
+        <p *ngIf="this.loginError" class="text-danger">
+          Credenciales inválidas
+        </p>
+        <input
+          type="text"
+          formControlName="username"
+          placeholder="Username"
+          class="form-control"
+        />
+        <div *ngIf="Username?.errors && Username?.touched">
+          <p *ngIf="Username?.hasError('required')" class="text-danger">
+            El nombre de usuario es requerido
+          </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="Contraseña"
+          class="form-control"
+        />
+        <div *ngIf="Password?.errors && Password?.touched">
+          <p *ngIf="Password?.hasError('required')" class="text-danger">
+            La contraseña es requerida
+          </p>
+        </div>
+      </div>
+      <button mat-button class="btn btn-pink">Iniciar sesión</button> <br />
+      <button mat-button class="btn btn-gray" (click)="onNoClick()">
+        Cancelar
+      </button>
+    </form>
+  </div>
+</div>

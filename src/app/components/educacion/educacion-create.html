@@ -1,0 +1,64 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<p [(ngModel)]="errorMessage" *ngIf="errorLogin" class="text-danger">Campos inválidos</p>
+<form class="form-group" (ngSubmit)="onSubmit($event)">
+    <div class="form-group row">
+        <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+        <div class="col-sm-10">
+            <input type="text" name="nombre" [(ngModel)]="ed.nombre" class="form-control" id="nombre" placeholder="Nombre/Título" value={{ed.nombre}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="descripcion" class="col-sm-2 col-form-label">Descripción</label>
+        <div class="col-sm-10">
+            <input type="text" name="descripcion" [(ngModel)]="ed.descripcion" placeholder="Descripción del título" class="form-control" id="institucion" value={{ed.descripcion}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="institucion" class="col-sm-2 col-form-label">Institución</label>
+        <div class="col-sm-10">
+            <input type="text" name="institucion" [(ngModel)]="ed.institucion" id="institucion" placeholder="Institución donde se realizó" class="form-control" value={{ed.institucion}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="tipo" class="col-sm-2 col-form-label">Tipo</label>
+        <div class="col-sm-10">
+            <input type="text" name="tipo" [(ngModel)]="ed.tipo" placeholder="Tipo de certificación" class="form-control" id="tipo" value={{ed.tipo}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="promedio" class="col-sm-2 col-form-label">Promedio</label>
+        <div class="col-sm-10">
+            <input type="number" name="promedio" [(ngModel)]="ed.promedio" placeholder="Promedio actual o final (opcional)" class="form-control" value={{ed.promedio}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="terminado" class="col-sm-2 col-form-label">Estado</label>
+        <div class="col-sm-10">
+            <select class="form-select" name="terminado" [(ngModel)]="ed.terminado" id="terminado" value={{ed.terminado}}>
+                <option [ngValue]=false value=false selected>En curso</option>
+                <option [ngValue]=true value=true>Completado</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="fechaInicio" class="col-sm-2 col-form-label">Fecha inicial</label>
+        <div class="col-sm-10">
+            <input type="date" name="fechaInicio" [(ngModel)]="ed.fechaInicio" id="fechaInicio" placeholder="Fecha inicial" class="form-control" value={{ed.fechaInicio}}>
+        </div>
+    </div>
+    <div class="form-group row" *ngIf="Terminado">
+        <label for="fechaFin" class="col-sm-2 col-form-label">Fecha final</label>
+        <div class="col-sm-10">
+            <input type="date" name="fechaFin" [(ngModel)]="ed.fechaFin" id="fechaFin" placeholder="Fecha final" class="form-control" value={{ed.fechaFin}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="logo" class="col-sm-2 col-form-label">Logo</label>
+        <div class="col-sm-10">
+            <input type="text" name="logo" [(ngModel)]="ed.logo" placeholder="URL del logo" class="form-control" id="logo" value={{ed.logo}}>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-pink">Enviar</button>
+    <button class="btn btn-gray" (click)="onNoClick()">Cancelar</button>
+</form>

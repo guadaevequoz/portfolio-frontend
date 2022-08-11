@@ -1,0 +1,18 @@
+<div *ngIf="item" class="item">
+    <mat-card class="example-card text-center">
+        <div class="row">
+          <div class="col">
+            <mat-card-title>{{ item.nombre }}</mat-card-title>
+          </div>
+        </div>
+        <mat-card-content>
+            <circle-progress
+            [percent]= "item.porcentaje"
+            [outerStrokeColor]="item.color"
+            [imageSrc]="item.logo"
+          ></circle-progress>
+          <p class="subtitle">{{item.porcentaje}}%</p>
+        </mat-card-content>
+        <mat-divider inset></mat-divider>
+      </mat-card>
+</div>

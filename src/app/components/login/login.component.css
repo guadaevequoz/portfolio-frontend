@@ -1,0 +1,33 @@
+.form-group {
+  margin: 20px;
+}
+
+::ng-deep.mat-dialog-container {
+  text-align: center;
+}
+
+.form-control-plaintext {
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.login:hover {
+  background-color: #fa58b6;
+  color: white;
+}
+
+.actions {
+  justify-content: center;
+}
+
+.btn:hover {
+  color: white;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
