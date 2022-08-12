@@ -10,18 +10,18 @@ export class FormatterService {
     return data ? 'Completado' : 'En curso';
   }
 
-  private getFecha(fecha: string | Date): string {
+  private getFecha(fecha: string): string {
     let act = new Date(fecha).toISOString().split('T')[0].split('-');
     act.pop();
     act.reverse();
     return act.join('/');
   }
 
-  getFechaInicial(fecha: string | Date): string {
+  getFechaInicial(fecha: string): string {
     return this.getFecha(fecha);
   }
 
-  getFechaFinal(fecha: string | Date): string {
+  getFechaFinal(fecha: string): string {
     if (fecha) {
       return this.getFecha(fecha);
     } else {
