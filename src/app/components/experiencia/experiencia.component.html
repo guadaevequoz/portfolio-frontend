@@ -7,14 +7,16 @@
       </button>
     </div>
     <div class="container">
-      <div class="col col-card my-2" *ngFor="let item of experienciaItems">
-        <div class="item" *ngIf="auth.Authenticated">
-          <button class="btn btn-white" (click)="edit(item)">Editar</button>
-          <button class="btn btn-danger" (click)="delete(item)">
-            Eliminar
-          </button>
+      <div class="row align-items-center justify-content-center">
+        <div class="col col-card my-2" *ngFor="let item of experienciaItems">
+          <div class="item" *ngIf="auth.Authenticated">
+            <button class="btn btn-white" (click)="edit(item)">Editar</button>
+            <button class="btn btn-danger" (click)="delete(item)">
+              Eliminar
+            </button>
+          </div>
+          <experiencia-item [data]="item"></experiencia-item>
         </div>
-        <experiencia-item [data]="item"></experiencia-item>
       </div>
     </div>
   </div>
