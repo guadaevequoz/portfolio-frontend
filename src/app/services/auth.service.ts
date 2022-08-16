@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Usuario } from '../models/usuario';
-const URL_API = 'http://localhost:8080/';
+const URL_API = 'https://argentinaprograma-portfolio.herokuapp.com/';
 @Injectable({
   providedIn: 'root',
 })

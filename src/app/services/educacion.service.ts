@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Educacion } from '../models/educacion';
-const URL_API = 'http://localhost:8080/';
+const URL_API = 'https://argentinaprograma-portfolio.herokuapp.com/';
 @Injectable({
   providedIn: 'root',
 })
